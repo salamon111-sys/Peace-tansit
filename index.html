@@ -102,7 +102,7 @@
                         </div>
                         <a href="contact.html" class="nav-item nav-link">Contact</a>
                     </div>
-                    <a href="" class="btn btn-primary rounded-pill py-2 px-4 ms-lg-4">Book Now</a>
+                    <a href="booking.html" class="btn btn-primary rounded-pill py-2 px-4 ms-lg-4">Book Now</a>
                 </div>
             </nav>
 
@@ -535,86 +535,87 @@
       <!-- Packages End -->
 
        <!-- Hajj & Umrah Booking Start -->
-<div class="container-fluid booking py-5">
-    <div class="container py-5">
-        <div class="row g-5 align-items-center">
-            <div class="col-lg-6">
-                <h5 class="section-booking-title pe-3">Booking</h5>
-                <h1 class="text-white mb-4">Hajj & Umrah Booking</h1>
-                <p class="text-white mb-4">
-                    Plan your spiritual journey with ease. We offer carefully curated Hajj and Umrah packages to suit every need, whether you're traveling solo or with family.
-                </p>
-                <p class="text-white mb-4">
-                    Let us handle your visa, flight, hotel, and transport — all you need to focus on is your Ibadah. Our experienced team ensures a smooth and fulfilling pilgrimage.
-                </p>
-                <a href="#" class="btn btn-light text-primary rounded-pill py-3 px-5 mt-2">Learn More</a>
-            </div>
-            <div class="col-lg-6">
-                <h1 class="text-white mb-3">Book Your Pilgrimage</h1>
-                <p class="text-white mb-4">Reserve your Hajj or Umrah package today. Limited spots available!</p>
-                <form>
-                    <div class="row g-3">
-                        <div class="col-md-6">
-                            <div class="form-floating">
-                                <input type="text" class="form-control bg-white border-0" id="name" placeholder="Your Name">
-                                <label for="name">Your Name</label>
+       <div class="container-fluid booking py-5">
+        <div class="container py-5">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-6">
+                    <h5 class="section-booking-title pe-3">Booking</h5>
+                    <h1 class="text-white mb-4">Hajj & Umrah Booking</h1>
+                    <p class="text-white mb-4">
+                        Plan your spiritual journey with ease. We offer carefully curated Hajj and Umrah packages to suit every need, whether you're traveling solo or with family.
+                    </p>
+                    <p class="text-white mb-4">
+                        Let us handle your visa, flight, hotel, and transport — all you need to focus on is your Ibadah. Our experienced team ensures a smooth and fulfilling pilgrimage.
+                    </p>
+                    <a href="#" class="btn btn-light text-primary rounded-pill py-3 px-5 mt-2">Learn More</a>
+                </div>
+                <div class="col-lg-6">
+                    <h1 class="text-white mb-3">Book Your Pilgrimage</h1>
+                    <p class="text-white mb-4">Reserve your Hajj or Umrah package today. Limited spots available!</p>
+                    <form action="https://formspree.io/f/mrbqeoee" method="POST">
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control bg-white border-0" id="name" placeholder="Your Name" name="name" required>
+                                    <label for="name">Your Name</label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-floating">
+                                    <input type="email" class="form-control bg-white border-0" id="email" placeholder="Your Email" name="email" required>
+                                    <label for="email">Your Email</label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-floating date" id="date3" data-target-input="nearest">
+                                    <input type="text" class="form-control bg-white border-0" id="datetime" placeholder="Preferred Date" data-target="#date3" data-toggle="datetimepicker" name="preferred_date" required />
+                                    <label for="datetime">Preferred Date</label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-floating">
+                                    <select class="form-select bg-white border-0" id="packageSelect" name="package" required>
+                                        <option value="umrah">Umrah Package</option>
+                                        <option value="hajj">Hajj Package</option>
+                                        <option value="ramadan">Ramadan Umrah</option>
+                                        <option value="custom">Custom Umrah</option>
+                                    </select>
+                                    <label for="packageSelect">Select Package</label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-floating">
+                                    <select class="form-select bg-white border-0" id="groupSize" name="group_size" required>
+                                        <option value="1">1 Person</option>
+                                        <option value="2">2 People</option>
+                                        <option value="3-5">3-5 People</option>
+                                        <option value="6+">6+ People</option>
+                                    </select>
+                                    <label for="groupSize">Group Size</label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-floating">
+                                    <input type="tel" class="form-control bg-white border-0" id="phone" placeholder="Phone Number" name="phone" required>
+                                    <label for="phone">Phone Number</label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-floating">
+                                    <textarea class="form-control bg-white border-0" placeholder="Special Request" id="message" name="message" style="height: 100px"></textarea>
+                                    <label for="message">Special Requests</label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <button class="btn btn-primary text-white w-100 py-3" type="submit">Book Now</button>
                             </div>
                         </div>
-                        <div class="col-md-6">
-                            <div class="form-floating">
-                                <input type="email" class="form-control bg-white border-0" id="email" placeholder="Your Email">
-                                <label for="email">Your Email</label>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="form-floating date" id="date3" data-target-input="nearest">
-                                <input type="text" class="form-control bg-white border-0" id="datetime" placeholder="Preferred Date" data-target="#date3" data-toggle="datetimepicker" />
-                                <label for="datetime">Preferred Date</label>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="form-floating">
-                                <select class="form-select bg-white border-0" id="packageSelect">
-                                    <option value="umrah">Umrah Package</option>
-                                    <option value="hajj">Hajj Package</option>
-                                    <option value="ramadan">Ramadan Umrah</option>
-                                    <option value="custom">Custom Umrah</option>
-                                </select>
-                                <label for="packageSelect">Select Package</label>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="form-floating">
-                                <select class="form-select bg-white border-0" id="groupSize">
-                                    <option value="1">1 Person</option>
-                                    <option value="2">2 People</option>
-                                    <option value="3-5">3-5 People</option>
-                                    <option value="6+">6+ People</option>
-                                </select>
-                                <label for="groupSize">Group Size</label>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="form-floating">
-                                <input type="tel" class="form-control bg-white border-0" id="phone" placeholder="Phone Number">
-                                <label for="phone">Phone Number</label>
-                            </div>
-                        </div>
-                        <div class="col-12">
-                            <div class="form-floating">
-                                <textarea class="form-control bg-white border-0" placeholder="Special Request" id="message" style="height: 100px"></textarea>
-                                <label for="message">Special Requests</label>
-                            </div>
-                        </div>
-                        <div class="col-12">
-                            <button class="btn btn-primary text-white w-100 py-3" type="submit">Book Now</button>
-                        </div>
-                    </div>
-                </form>
+                    </form>
+                </div>
             </div>
         </div>
     </div>
-</div>
+    
 <!-- Hajj & Umrah Booking End -->
 
         <!-- Tour Booking End -->
@@ -869,13 +870,16 @@
             <h5 class="subscribe-title px-3">Subscribe</h5>
             <h1 class="text-white mb-4">Stay Updated on Hajj & Umrah Services</h1>
             <p class="text-white mb-5">Subscribe to receive the latest updates, offers, and tips for your next Hajj or Umrah pilgrimage. We are committed to making your spiritual journey smooth and unforgettable.</p>
-            <div class="position-relative mx-auto">
-                <input class="form-control border-primary rounded-pill w-100 py-3 ps-4 pe-5" type="email" placeholder="Enter your email">
-                <button type="button" class="btn btn-primary rounded-pill position-absolute top-0 end-0 py-2 px-4 mt-2 me-2">Subscribe</button>
-            </div>
+            <form action="https://formspree.io/f/mrbqeoee" method="POST">
+                <div class="position-relative mx-auto">
+                    <input class="form-control border-primary rounded-pill w-100 py-3 ps-4 pe-5" type="email" placeholder="Enter your email" name="email" required>
+                    <button type="submit" class="btn btn-primary rounded-pill position-absolute top-0 end-0 py-2 px-4 mt-2 me-2">Subscribe</button>
+                </div>
+            </form>
         </div>
     </div>
 </div>
+
 <!-- Subscribe End -->
 
         <!-- Footer Start -->
